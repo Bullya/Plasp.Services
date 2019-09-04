@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserDomain.Contexts;
 
 namespace UserDomain.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    partial class UserDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190904091916_updatedb")]
+    partial class updatedb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,9 +52,7 @@ namespace UserDomain.Migrations
                         .HasColumnType("varchar(20)");
 
                     b.Property<int>("Sex")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("sex")
-                        .HasDefaultValue(0);
+                        .HasColumnName("sex");
 
                     b.Property<string>("UserName")
                         .IsRequired()

@@ -18,12 +18,15 @@ namespace UserDomain.Mappings
             //    .HasConversion(
             //        v => v.ToString(),
             //        v => (EquineBeast)Enum.Parse(typeof(UserSex), v));
-            var userSexConverter = new EnumToStringConverter<UserSex>();
-            builder.Property(c => c.Sex)
-                .HasConversion(userSexConverter);
+            //var userSexConverter = new EnumToStringConverter<UserSex>();
+            //builder.Property(c => c.Sex)
+            //    .HasConversion(userSexConverter);
 
-            builder.Property(c => c.CreateTime)
-                .HasDefaultValue(DateTime.Now);
+            builder.Property(c => c.Sex)
+                .HasDefaultValue(UserSex.Default);
+
+            builder.Property(c => c.IsDelete)
+                .HasDefaultValue(false);
         }
     }
 }
