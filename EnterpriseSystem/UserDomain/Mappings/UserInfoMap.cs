@@ -1,9 +1,7 @@
 ﻿using BaseDomainContract.DataContract.Enum;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using System;
-using UserDomainContract.DataContract;
+using UserDomainContract.DataContract.Entitys;
 
 namespace UserDomain.Mappings
 {

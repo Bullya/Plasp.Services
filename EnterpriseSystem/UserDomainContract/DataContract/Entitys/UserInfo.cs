@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace UserDomainContract.DataContract
+namespace UserDomainContract.DataContract.Entitys
 {
     [Table("user_info")]
     public class UserInfo
@@ -31,6 +31,12 @@ namespace UserDomainContract.DataContract
         /// </summary>
         [Column("sex")]
         public UserSex Sex { get; set; } 
+
+        /// <summary>
+        /// 年龄
+        /// </summary>
+        [Column("age")]
+        public int Age { get; set; }
 
         /// <summary>
         /// 籍贯

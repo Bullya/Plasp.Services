@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using UserDomain.Mappings;
-using UserDomainContract.DataContract;
+using UserDomainContract.DataContract.Entitys;
 
 namespace UserDomain.Contexts
 {

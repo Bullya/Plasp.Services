@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Plasp.Express.OA.Service.IoC;
 
 namespace Plasp.Express.OA
 {
@@ -31,6 +32,8 @@ namespace Plasp.Express.OA
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Injector
+            NativeInjectorBootStrapper.RegisterServices(services);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
