@@ -1,0 +1,152 @@
+﻿define(['jquery', 'bootstrap-tab', 'sidebar'], function ($, sidebar) {
+
+    function events()
+    {
+        $('#menu').sidebarMenu({
+            data: [{
+                id: '1',
+                text: '系统设置',
+                icon: 'icon-cog',
+                url: '',
+                menus: [{
+                    id: '11',
+                    text: '编码管理',
+                    icon: 'icon-glass',
+                    url: 'C:/Users/yangxiaojun/Desktop/bootstrap-ace_sample/code1.html'
+                }]
+            }, {
+                id: '2',
+                text: '基础数据',
+                icon: 'icon-leaf',
+                url: '',
+                menus: [{
+                    id: '21',
+                    text: 'BOM维护',
+                    icon: 'icon-glass',
+                    url: 'C:/Users/yangxiaojun/Desktop/bootstrap-ace_sample/bootstrapTableClient.html'
+                }, {
+                    id: '22',
+                    text: '零件管理',
+                    icon: 'icon-glass',
+                    url: 'C:/Users/yangxiaojun/Desktop/bootstrap-ace_sample/code1.html'
+                }]
+            }, {
+                id: '3',
+                text: '权限管理',
+                icon: 'icon-user',
+                url: '',
+                menus: [{
+                    id: '31',
+                    text: '用户管理',
+                    icon: 'icon-user',
+                    url: '/SystemSetting/User'
+                }, {
+                    id: '32',
+                    text: '角色管理',
+                    icon: 'icon-apple',
+                    url: '/SystemSetting/Role'
+                }, {
+                    id: '33',
+                    text: '菜单管理',
+                    icon: 'icon-list',
+                    url: '/SystemSetting/Menu'
+                }, {
+                    id: '34',
+                    text: '部门管理',
+                    icon: 'icon-glass',
+                    url: '/SystemSetting/Department'
+                }]
+            }, {
+                id: '4',
+                text: '订单管理',
+                icon: 'icon-envelope',
+                url: '',
+                menus: [{
+                    id: '41',
+                    text: '订单查询',
+                    icon: 'icon-glass',
+                    url: '/Order/Query'
+                }, {
+                    id: '45',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '46',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '47',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '48',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '49',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '50',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '51',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '52',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '53',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '54',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '55',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '56',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '57',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '58',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }, {
+                    id: '59',
+                    text: '订单删除',
+                    icon: 'icon-glass',
+                    url: '/Order/delete'
+                }]
+            }]
+        });
+    }
+
+    return {
+        events: events
+    }
+});
