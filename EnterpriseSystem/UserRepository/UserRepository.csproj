@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseDomain\BaseDomain.csproj" />
+    <ProjectReference Include="..\UserDomainContract\UserDomainContract.csproj" />
+    <ProjectReference Include="..\UserDomain\UserDomain.csproj" />
+  </ItemGroup>
+
+</Project>
